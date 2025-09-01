@@ -52,7 +52,7 @@ tok = AutoTokenizer.from_pretrained(save_dir)
 from transformers import TextClassificationPipeline
 pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0)
 print(pipe("This movie was absolutely fantastic!"))
-# Output: [{'label': 'LABEL_1', 'score': 0.9999}]
+Output: [{'label': 'LABEL_1', 'score': 0.9999}]
 
 📈 Next Steps
 Upload trained weights to Hugging Face Hub
