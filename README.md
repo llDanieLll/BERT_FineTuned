@@ -48,21 +48,21 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 model = AutoModelForSequenceClassification.from_pretrained(save_dir)
 tok = AutoTokenizer.from_pretrained(save_dir)
 
-🔍 Inference Example
+# 🔍 Inference Example
 from transformers import TextClassificationPipeline
 pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0)
 print(pipe("This movie was absolutely fantastic!"))
 Output: [{'label': 'LABEL_1', 'score': 0.9999}]
 
-📈 Next Steps
+# 📈 Next Steps
 Upload trained weights to Hugging Face Hub
 Try DistilBERT for faster inference
 Fine-tune on custom datasets (CSV/JSON)
 Experiment with LoRA/PEFT for lightweight fine-tuning
 
-📜 License
+#📜 License
 MIT License – feel free to use, modify, and share.
 
-👨‍💻 Author
+#👨‍💻 Author
 Daniel Qiu
 GitHub
