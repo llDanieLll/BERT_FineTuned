@@ -40,18 +40,25 @@ trainer.evaluate()
 💾 Saving and Loading the Model
 # Save
 save_dir = "bert-sst2-t4-best"
+
 trainer.model.save_pretrained(save_dir)
+
 tok.save_pretrained(save_dir)
 
 # Load
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
+
 model = AutoModelForSequenceClassification.from_pretrained(save_dir)
+
 tok = AutoTokenizer.from_pretrained(save_dir)
 
 # 🔍 Inference Example
-from transformers import TextClassificationPipeline \n
-pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0) \n
-print(pipe("This movie was absolutely fantastic!")) \n
+from transformers import TextClassificationPipeline 
+
+pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0) 
+
+print(pipe("This movie was absolutely fantastic!")) 
+
 Output: [{'label': 'LABEL_1', 'score': 0.9999}]
 
 # 📈 Next Steps
