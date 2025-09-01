@@ -49,9 +49,9 @@ model = AutoModelForSequenceClassification.from_pretrained(save_dir)
 tok = AutoTokenizer.from_pretrained(save_dir)
 
 # 🔍 Inference Example
-from transformers import TextClassificationPipeline
-pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0)
-print(pipe("This movie was absolutely fantastic!"))
+from transformers import TextClassificationPipeline \n
+pipe = TextClassificationPipeline(model=model, tokenizer=tok, device=0) \n
+print(pipe("This movie was absolutely fantastic!")) \n
 Output: [{'label': 'LABEL_1', 'score': 0.9999}]
 
 # 📈 Next Steps
