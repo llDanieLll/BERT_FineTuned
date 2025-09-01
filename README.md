@@ -63,13 +63,19 @@ Output: [{'label': 'LABEL_1', 'score': 0.9999}]
 
 # 📈 Next Steps
 Upload trained weights to Hugging Face Hub
+
 Try DistilBERT for faster inference
+
 Fine-tune on custom datasets (CSV/JSON)
+
 Experiment with LoRA/PEFT for lightweight fine-tuning
 
 #📜 License
+
 MIT License – feel free to use, modify, and share.
 
 #👨‍💻 Author
+
 Daniel Qiu
+
 GitHub
